@@ -4,8 +4,6 @@ This project implements a **genome variant detection system** using **advanced D
 
 
 ````markdown
-# 
-
 ## 📁 Project Structure
 
 ```bash
