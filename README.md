@@ -2,9 +2,6 @@
 
 This project implements a **genome variant detection system** using **advanced Data Structures and Algorithms** in C, primarily using **Trie**, **Aho-Corasick pattern matching**, **hash tables**, and **heaps** for approximate matching. It can detect **exact or closest variants** in DNA sequences, and print detailed reports for individual users based on their genomic sequence.
 
----
-
----
 
 ````markdown
 # 
