@@ -1,0 +1,15 @@
+1,Cystic Fibrosis,CTTCTTCTCTGTTCTCCTGCC,Pathogenic,0.1
+2,Sickle Cell Disease,GTGGTGCTGAGTACAACTCCT,Pathogenic,0.1
+3,Huntington's Disease,CAGCAGCAGCAGCAGCAGC,Pathogenic,0.3
+4,Muscular Dystrophy,CCTGACCTGACCTGACCTGA,Risk Factor,5.2
+5,Phenylketonuria (PKU),GCCGAGGTTGACACCTTCTG,Pathogenic,0.01
+6,Marfan Syndrome,AGTGTCTGTTGCTGATCCAA,Pathogenic,0.04
+7,Down Syndrome ,AATGTTAAAGTTCTAGTGGA,Pathogenic,1.2
+8,BRCA1,GATGGAGGAAACGCTGAC,Pathogenic,0.07
+9,BRCA2,AAGGACCTGCTGACTGGGTA,Pathogenic,0.05
+10,Alzheimer's Disease,GTTTCTTGAGCTCTAGCTCC,Risk factor,0.02
+11,Diabetes Type 2,TGTCTCCTGCTGACTCTGAA,Pathogenic,0.2
+12,Tay-Sachs Disease,GCCGGTGACCTGAACTCTAC,Pathogenic,0.1
+13,Neurofibromatosis,CTCTGACAGGTTGACGTTGA,Pathogenic,0.3
+14,Fragile X Syndrome,CGGTGTGACCTGGAGTCCCA,Risk Factor,5.2
+15,Hypercholesterolemia,CCTAGGTTGCTGTTGTTGAC,Pathogenic,1.2
