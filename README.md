@@ -63,18 +63,33 @@ NOTE: there is a high risk of this gene getting carried over to future generatio
 
 ---
 
-## ⚙️ How It Works
-
-1. **Trie Construction**: All known reference genome sequences are inserted into a Trie.
-2. **Failure Links**: Aho-Corasick builds failure links to allow fast multi-pattern matching.
-3. **Search**: Each user DNA sequence is compared to the Trie for exact/approximate matches.
-4. **Matching**:
-
-   * ✅ Exact match → immediate reporting
-   * ❌ No exact match → best approximate match is computed and reported
-5. **Report**: Matching gene key is used to lookup metadata from the hash table.
 
 ---
+
+## ⚙️ How It Works
+
+1. 🧱 **Trie Construction**  
+   All known gene variant sequences are inserted into a trie.
+
+2. 🔁 **Aho-Corasick Failure Links**  
+   Built for fast multi-pattern detection with backtracking.
+
+3. 🔬 **User Sequence Scanning**  
+   Each test sequence is matched against the trie for exact or near matches.
+
+4. 🧮 **Match Handling**
+   - ✅ **Exact Match** → Report immediately
+   - ❌ **No Match** → Approximate match via edit distance + heap
+
+5. 🧾 **Report Generation**  
+   Based on variant metadata from the hash table.
+
+---
+
+## 📊 Input File Formats
+
+### `filled_reference_genome.csv`
+
 
 ## 📊 Input Files
 
@@ -106,15 +121,21 @@ gcc main.c trie.c heap.c hash.c -o dna_variant
 
 ---
 
-## 📚 Topics Covered
+📚 Topics Covered
+Aho-Corasick Pattern Matching
 
-* Aho-Corasick Automaton
-* Edit Distance Matching
-* Tries and Pattern Search
-* Hash Tables in C
-* Min Heap
-* File Parsing (CSV)
-* Report Generation via CLI
+Edit Distance (Levenshtein)
+
+Trie Construction and Search
+
+Hash Tables and Metadata Lookup
+
+Min-Heap for Closest Match
+
+File Handling and CSV Parsing in C
+
+CLI-based Report Generation
+
 
 ---
 
