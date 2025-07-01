@@ -6,7 +6,7 @@ This project implements a **genome variant detection system** using **advanced D
 
 ## 📁 Project Structure
 
-
+````bash
 .
 ├── main.c                  # Driver code
 ├── trie.c / trie.h         # Trie implementation for variant sequences
