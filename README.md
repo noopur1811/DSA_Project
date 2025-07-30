@@ -124,15 +124,13 @@ gcc main.c trie.c heap.c hash.c -o dna_variant
 📚 Topics Covered
 Aho-Corasick Pattern Matching
 
-Edit Distance (Levenshtein)
+Edit Distance 
 
 Trie Construction and Search
 
 Hash Tables and Metadata Lookup
 
 Min-Heap for Closest Match
-
-File Handling and CSV Parsing in C
 
 CLI-based Report Generation
 
