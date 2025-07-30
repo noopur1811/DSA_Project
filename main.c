@@ -91,7 +91,7 @@ int readcsv(const char *filename, ref_genome *rfg, int limit) {
 
         // Tokenize and store in rfg[count]
         tokenize_line(line, &rfg[count]);
-        ref_genome *v =&rfg[count]; //add the values in hash table consecutively
+        ref_genome *v =&rfg[count]; 
         hash_t[count] = v;
         count++;
     }
@@ -109,7 +109,7 @@ void print_ref_genomes(ref_genome *rfg, int count) {
         printf("Label: %s\n", rfg[i].label);
         printf("Sequence: %s\n", rfg[i].sequence);
         printf("Significance: %s\n", rfg[i].significance);
-        printf("Frequency: %.2f\n\n", rfg[i].frequency); // Assuming frequency has 2 decimal places
+        printf("Frequency: %.2f\n\n", rfg[i].frequency); 
     }
 }
 
@@ -119,7 +119,7 @@ void insert_all_into_trie(TrieNode *root, ref_genome *rfg, int count) {
         // Insert the sequence and label into the Trie
         insert_into_trie(&root, rfg[i].sequence, rfg[i].key);
     }
-    //printf("sequences inserted in trie\n");
+   
 }
 
 //functions for second csv
@@ -143,7 +143,7 @@ int load_test_cases(const char *filename, user *cases, int limit) {
         if (!test->name || !test->gender || !test->test_sequence) {
             perror("Failed to allocate memory");
             fclose(file);
-            return count; // Return the number of successfully loaded cases
+            return count; 
         }
 
         sscanf(line, "%49[^,],%d,%9[^,],%149[^\n]", test->name, &test->age, test->gender, test->test_sequence);
